@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-hidden="true">
+
+  <circle cx="32" cy="32" r="31" fill="#0B2545" stroke="#FFC107" stroke-width="2"/>
+  <!-- lightning bolt -->
+  <path d="M34 10 L18 34 H28 L24 54 L46 26 H35 Z" fill="#FFC107"/>
+  <!-- water drop, overlapped bottom-right -->
+  <path d="M42 30 C48 38 50 42 50 46 C50 50.4 46.4 54 42 54 C37.6 54 34 50.4 34 46 C34 42 36 38 42 30 Z"
+        fill="#FFFFFF" opacity="0.9"/>
+
+</svg>
