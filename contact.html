@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!--
+  Sibusiso Electrical & Plumbing Services - Contact
+  WEDE5020 | Website Project | Part 1 | Theolin Chetty | ST10507916
+  Two locations are shown per the assignment brief (4.1): Head Office /
+  Workshop (Johannesburg CBD) and the Randburg Satellite Depot. Maps use
+  OpenStreetMap's free embed (no API key required).
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Sibusiso Electrical & Plumbing Services</title>
+  <meta name="description" content="Contact Sibusiso Electrical & Plumbing Services - Johannesburg CBD head office and Randburg depot, phone, email, and contact form." />
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="" width="40" height="40" />
+        <span>
+          Sibusiso Electrical &amp; Plumbing
+          <span class="brand-sub">JOHANNESBURG</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="visually-hidden">Menu</span>
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="primary-navigation" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+          <li><a class="btn btn--primary" href="enquiry.html">Get a Quote</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="page-hero">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p>Two ways to reach us across Johannesburg - call, email, or send a message below.</p>
+      </div>
+    </section>
+
+    <!-- ===================== QUICK CONTACT DETAILS ===================== -->
+    <section class="section">
+      <div class="container">
+        <ul class="contact-detail-list grid grid--3">
+          <li>
+            <img src="images/icon-phone.svg" alt="" />
+            <div>
+              <strong>Call / WhatsApp</strong><br />
+              <a href="tel:+27835550142">083 555 0142</a>
+            </div>
+          </li>
+          <li>
+            <img src="images/icon-emergency.svg" alt="" />
+            <div>
+              <strong>After-Hours Emergency</strong><br />
+              <a href="tel:+27835550199">083 555 0199</a>
+            </div>
+          </li>
+          <li>
+            <img src="images/icon-quote.svg" alt="" />
+            <div>
+              <strong>Email</strong><br />
+              <a href="mailto:info@sibusisoelectricalplumbing.co.za">info@sibusisoelectricalplumbing.co.za</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== LOCATIONS + MAPS ===================== -->
+    <section class="section section--grey">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Our Locations</h2>
+          <p>Two Johannesburg locations to serve you better.</p>
+        </div>
+
+        <div class="grid grid--2">
+
+          <div class="location-card">
+            <h3><img src="images/icon-location.svg" alt="" /> Head Office &amp; Workshop</h3>
+            <address style="font-style:normal;">
+              123 Empire Road<br />
+              Johannesburg CBD, Gauteng, 2001
+            </address>
+            <p>
+              Mon&ndash;Fri: 07:00&ndash;17:00<br />
+              Sat: 08:00&ndash;13:00<br />
+              Sun: Emergency call-outs only
+            </p>
+            <iframe
+              class="map-frame"
+              title="Map showing the Johannesburg CBD head office location"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=28.03%2C-26.22%2C28.08%2C-26.18&amp;layer=mapnik&amp;marker=-26.2023%2C28.0436"
+              loading="lazy">
+            </iframe>
+          </div>
+
+          <div class="location-card">
+            <h3><img src="images/icon-location.svg" alt="" /> Randburg Satellite Depot</h3>
+            <address style="font-style:normal;">
+              45 Republic Road<br />
+              Randburg, Gauteng, 2194
+            </address>
+            <p>
+              Mon&ndash;Fri: 08:00&ndash;16:00<br />
+              (Stock &amp; collections point)
+            </p>
+            <iframe
+              class="map-frame"
+              title="Map showing the Randburg satellite depot location"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=27.98%2C-26.11%2C28.03%2C-26.07&amp;layer=mapnik&amp;marker=-26.0939%2C28.0064"
+              loading="lazy">
+            </iframe>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT FORM ===================== -->
+    <section class="section">
+      <div class="container" style="max-width:640px;">
+        <div class="section-heading">
+          <h2>Send Us a Message</h2>
+        </div>
+        <div class="form-card">
+          <form novalidate data-validate>
+
+            <div class="form-status" role="alert" aria-live="polite"></div>
+
+            <div class="form-row">
+              <label for="contact-name">Name <span class="required">*</span></label>
+              <input type="text" id="contact-name" name="contact-name" required autocomplete="name" />
+              <span class="error-text" id="contact-name-error">Please enter your name.</span>
+            </div>
+
+            <div class="form-row">
+              <label for="contact-email">Email <span class="required">*</span></label>
+              <input type="email" id="contact-email" name="contact-email" required autocomplete="email" />
+              <span class="error-text" id="contact-email-error">Please enter a valid email address.</span>
+            </div>
+
+            <div class="form-row">
+              <label for="contact-message">Message <span class="required">*</span></label>
+              <textarea id="contact-message" name="contact-message" required placeholder="How can we help?"></textarea>
+              <span class="error-text" id="contact-message-error">Please enter a message.</span>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--block">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Sibusiso Electrical &amp; Plumbing</h4>
+          <p>Trusted electrical and plumbing services for Johannesburg homes and small businesses.</p>
+        </div>
+        <div>
+          <h4>Site Map</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>More</h4>
+          <ul>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="enquiry.html">Enquiry / Quote</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+27835550142">083 555 0142</a></li>
+            <li><a href="mailto:info@sibusisoelectricalplumbing.co.za">info@sibusisoelectricalplumbing.co.za</a></li>
+            <li>Johannesburg CBD &amp; Randburg</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2026</span> Sibusiso Electrical &amp; Plumbing Services. Student project for WEDE5020 - hypothetical business for assignment purposes.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
